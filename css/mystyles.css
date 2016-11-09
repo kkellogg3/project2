@@ -1,0 +1,48 @@
+body {
+    background-color: #EEE8AA;
+}
+
+.main {
+    width: 1000px;
+    height: 1500px;
+}
+
+section {
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.name {
+    padding-bottom: 3px;
+    padding-left: 50px;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: brown;
+}
+
+p {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+label {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+
+

@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Florida Residence Survey</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/style.css">
+     <!--   <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css"> -->
+        
+        <link rel="stylesheet" href="css/mystyles.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,8 +18,152 @@
         <![endif]-->
     </head>
     <body>
-
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
+<div class="main">
+        <h1>Florida Residence Survey</h1>
+        
+        <p>Please fill out the information below based on how long you've been a Florida resident and your experience as a Florida resident.</p>
+        
+        <form name="surveyForm" action="php/survey.php" onsubmit="return validation()" method="post">
+        
+       
+        <p class="name">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstname" id="firstName">
+        </p>
+        
+        
+        
+        <p class="name">
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastname" id="lastName">
+        </p>
+        
+        
+        
+    <section>      
+       <p>How long have you lived in Florida? (Choose to the closest year)</p>
+          <input type="radio" name="radio_group_1" id="radio_1" value="born">
+          <label for="radio_1">I was born here</label>
+          <br>
+          <input type="radio" name="radio_group_1" id="radio_2" value="twentyyears">
+          <label for="radio_2">20 years</label>
+          <br>
+          <input type="radio" name="radio_group_1" id="radio_3" value="tenyears">
+          <label for="radio_3">10 years</label>
+          <br>
+          <input type="radio" name="radio_group_1" id="radio_4" value="fiveyears">
+          <label for="radio_4">5 years</label>
+          <br>
+          <input type="radio" name="radio_group_1" id="radio_5" value="oneyear">
+          <label for="radio_5">1 year</label>
+          <br>
+          <input type="radio" name="radio_group_1" id="radio_6" value="oneorless">
+          <label for="radio_6">Less than a year</label>
+          
+       </section>
+       
+       <section>  
+          <p>How well do you like living in Florida?</p>
+          <input type="radio" name="radio_group_2" id="radio_7" value="verymuch">
+          <label for="radio_7">Very Much</label>
+          <br>
+          <input type="radio" name="radio_group_2" id="radio_8" name="somewhat">
+          <label for="radio_8">Somewhat</label>
+          <br>
+          <input type="radio" name="radio_group_2" id="radio_9" value="notverymuch">
+          <label for="radio_9">Not very much</label>
+          <br>
+          <input type="radio" name="radio_group_2" id="radio_10" value="notatall">
+          <label for="radio_10">Not at all</label>
+          <br>
+          
+    </section>
+    
+    <section>
+          
+          <p>Why did you choose to move to Florida?</p>
+          <input type="radio" name="radio_group_3" id="radio_11" value="bornhere">
+          <label for="radio_11">I was born here</label>
+          <br>
+          <input type="radio" name="radio_group_3" id="radio_12" value="job">
+          <label for="radio_12">I moved for a job opportunity</label>
+          <br>
+          <input type="radio" name="radio_group_3" id="radio_13" value="retired">
+          <label for="radio_13">I retired here</label>
+          <br>
+          <input type="radio" name="radio_group_3" id="radio_14" value="themepark">
+          <label for="radio_14">I moved to be closer to the theme parks</label>
+          <br>
+          <input type="radio" name="radio_group_3" id="radio_15" value="university">
+          <label for="radio_15">I moved to attend a particular university</label>
+          <br>
+          <input type="radio" name="radio_group_3" id="radio_16" value="friends">
+          <label for="radio_16">I moved to join other friends or family already living here</label>
+          <br>
+          
+    </section>
+    
+    
+    <section>     
+          <p>What is the main reason you've decided to stay in Florida?</p>
+          <input type="radio" name="radio_group_4" id="radio_17" value="job2">
+          <label for="radio_17">A variety of job opportunities</label>
+          <br>
+          <input type="radio" name="radio_group_4" id="radio_18" value="themepark2">
+          <label for="radio_18">Easy access to the theme parks</label>
+          <br>
+          <input type="radio" name="radio_group_4" id="radio_19" value="winter">
+          <label for="radio_19">The mild winter</label>
+          <br>
+          <input type="radio" name="radio_group_4" id="radio_20" value="activities">
+          <label for="radio_20">Activities around all of the cities</label>
+          <br>
+          <input type="radio" name="radio_group_4" id="radio_21" value="beaches">
+          <label for="radio_21">Easy access to the beaches</label>
+          <br>
+          <input type="radio" name="radio_group_4" id="radio_22" value="wildlife">
+          <label for="radio_22">The variety of wildlife</label>
+          <br>
+      </section>
+      
+      <section>
+          <p>How likely are you to recommend that a friend or family member move to Florida?</p>
+          <input type="radio" name="radio_group_5" id="radio_23" value="Verylikely">
+          <label for="radio_23">Very likely</label>
+          <br>
+          <input type="radio" name="radio_group_5" id="radio_24" value="somewhatlikely">
+          <label for="radio_24">Somewhat likely</label>
+          <br>
+          <input type="radio" name="radio_group_5" id="radio_25" value="undecided">
+          <label for="radio_25">Undecided</label>
+          <br>
+          <input type="radio" name="radio_group_5" id="radio_26" value="notlikely">
+          <label for="radio_26">Not likely</label>
+          <br>
+    </section>
+    
+    <section>
+          <p>How easy was it to move to Florida?</p>
+          <input type="radio" name="radio_group_6" id="radio_27" value="doesn'tapply">
+          <label for="radio_27">Doesn't apply</label>
+          <br>
+          <input type="radio" name="radio_group_6" id="radio_28" value="veryeasy">
+          <label for="radio_28">Very Easy</label>
+          <br>
+          <input type="radio" name="radio_group_6" id="radio_29" value="somewhateasy">
+          <label for="radio_29">Somewhat Easy</label>
+          <br>
+          <input type="radio" name="radio_group_6" id="radio_30" value="somewhatdifficult">
+          <label for="radio_30">Somewhat Difficult</label>
+          <br>
+          <input type="radio" name="radio_group_6" id="radio_31" value="verydifficult">
+          <label for="radio_31">Very Difficult</label>
+          <br>
+    </section>      
+          
+          <input type="submit" value="submit">
+          
+    </div>      
+       
     </body>
 </html>
